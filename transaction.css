@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+
+.bg-img{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.logo-text{
+  color: white;
+  background-color: red;
+  width: fit-content;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  margin-left: 100px;
+}
+
+.links span{
+  margin-top: 16px !important;
+  margin-left: 30px;
+}
+
+.links span a{
+  text-decoration: none;
+  color: white;
+  align-items: center !important;
+  font-weight: bolder;
+  margin-top: 16px !important;
+  padding: 10px;
+
+}
+
+
+.links span a:hover{
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+
+    
+  .main-heading {
+    font-family: "Raleway", cursive;
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 20px;
+    margin-top: 1.875rem;
+    text-align: center;
+  }
+
+
+  .customer-table {
+    padding: 3px !important;
+    padding-left: 10% !important;
+  }
+
+
+  table{
+     margin: auto;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+
+  table th, td {
+    border:1px solid !important;
+    width: 1% !important;
+    text-align: center;
+    padding: 5px !important;
+    font-size: large;
+    border-collapse: collapse;
+
+  }
+
+
+
+table tbody tr {
+    background-color: white !important;
+    color: #000 !important;
+
+  }
+  
+  th {
+    font-family: "Raleway", cursive;
+    color: #ffffff !important;
+    font-size: 20px !important;
+    border-radius:0px !important ;
+    background-color: #659DBD !important ;
+  }
+
+  td {
+    color: black;
+    font-weight: lighter;
+    background-color: white;
+    padding: 3px 0 0 0 !important;
+  }
+
+  .text-center{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .main-btn{
+    background-color: #659DBD !important;
+    border: none !important;
+    padding: 15px;
+    border-radius: 10px;
+    color: white !important;
+  }
+
+  .title{
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+  }
+
+
+  .btn-secondary{
+    color: red !important;
+  }
+
+  .footer{
+    background-color: #659DBD;
+    text-align: center;
+    padding: 10px;
+    color: white;
+
+  }
