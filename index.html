@@ -236,7 +236,10 @@
         function toggleDivision(){
             if(toggle.style.display==="none"){
                 toggle.style.display="block";
-                scrollToId()
+                window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
             
             }
             else{
