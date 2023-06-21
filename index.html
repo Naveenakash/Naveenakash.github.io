@@ -234,17 +234,15 @@
         var toggle = document.getElementById("toggleDiv");
         var hamburger = document.getElementById("hamImg");
         function toggleDivision(){
-            if(toggle.style.display==="none"){
+            if(toggle.style.display==="block"){
+                toggle.style.display="none";
+            }
+            else{
                 toggle.style.display="block";
-                window.scrollTo({
+                 window.scrollTo({
                 top: 0,
                 behavior: "smooth"
             });
-            
-            }
-            else{
-                toggle.style.display="none";
-            
 
             }
         }
