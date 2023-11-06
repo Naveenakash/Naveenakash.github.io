@@ -84,6 +84,18 @@ nav ul {
     padding: 4px 40px 4px 0;
     
 }
+@keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .hamDiv {
+    animation: slideDown 0.5s ease-in-out; /* Apply the animation */
+  }
 
 .logo {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -210,6 +222,16 @@ nav ul {
 .projects{
     display: flex;
 }
+.ss img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .ss img.hidden {
+    opacity: 0;
+  }
 .icons img{
     height: 15px;
     width: 13px;
@@ -309,9 +331,9 @@ footer{
 }
 
 @media screen and (max-width: 576px) {
-    .main{
+/*     .main{
         padding-left: 12px;
-    }
+    } */
     .last ul{
         display: none;
     }
