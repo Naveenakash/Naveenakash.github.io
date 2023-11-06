@@ -130,6 +130,8 @@
                 <div class="projectCard">
                     <div class="ss">
                         <img src="projects/watchWebsite.png" alt="">
+                        <img src="projects/watch2.png" alt="">
+                        <img src="projects/watch3.png" alt="">
                     </div>
                     <div class="projectName">
                         <p>FRONTEND WATCH WEBSITE</p>
@@ -138,6 +140,10 @@
                 <div class="projectCard">
                     <div class="ss">
                         <img src="projects/train1.png" alt="">
+                        <img src="projects/train-2.png" alt="">
+                        <img src="projects/train-3.png" alt="">
+                        <img src="projects/train-4.png" alt="">
+                        <img src="projects/train-5.png" alt="">
                     </div>
                     <div class="projectName">
                         <p>TRAIN RESERVATION SYSTEM</p>
@@ -146,6 +152,8 @@
                 <div class="projectCard ">
                     <div class="ss">
                         <img src="projects/calculator1.png" alt="">
+                        <img src="projects/cal2.png" alt="">
+                        <img src="projects/cal3.png" alt="">
                     </div>
                     <div class="projectName">
                         <p>JAVASCRIPT CALCULATOR</p>
@@ -272,6 +280,32 @@
 
         document.querySelector('.designed').innerHTML = copyrightFooter;
 
+        //project image slides
+        const projectContainers = document.querySelectorAll('.ss');
+
+        function changeImage(container) {
+        const images = container.querySelectorAll('img');
+        let currentImageIndex = 0;
+
+        function showNextImage() {
+            images.forEach((image, index) => {
+            if (index === currentImageIndex) {
+                image.classList.remove("hidden");
+            } else {
+                image.classList.add("hidden");
+            }
+            });
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        }
+
+        showNextImage(); // Show the first image initially
+
+        setInterval(showNextImage, 3000);
+        }
+
+        projectContainers.forEach(container => {
+        changeImage(container);
+        });
     </script>
 </body>
 </html>
